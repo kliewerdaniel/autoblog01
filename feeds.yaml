@@ -1,0 +1,73 @@
+feeds:
+  # News & World Affairs
+  - "http://feeds.bbci.co.uk/news/world/rss.xml"                     # BBC World (20 articles)
+  - "https://www.theguardian.com/world/rss"                         # The Guardian World (20 articles)  
+  - "https://feeds.npr.org/1004/rss.xml"                            # NPR World (10 articles)
+  - "https://www.aljazeera.com/xml/rss/all.xml"                     # Al Jazeera (20 articles)
+  - "https://news.un.org/feed/subscribe/en/news/all/rss.xml"        # UN News (20 articles)
+  - "https://theintercept.com/feed/?rss"                            # The Intercept (20 articles)
+  - "https://globalvoices.org/feed/"                                # Global Voices (15 articles)
+  - "https://www.thehindu.com/news/international/?service=rss"      # The Hindu (20 articles)
+  - "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms"    # Times of India (20 articles)
+  - "https://www.scmp.com/rss/91/feed"                              # SCMP (20 articles)
+  - "https://www.chinadaily.com.cn/rss/world_rss.xml"               # China Daily (20 articles)
+  - "https://www.japantimes.co.jp/feed/"                            # The Japan Times (20 articles)
+  - "https://www.lemonde.fr/rss/une.xml"                            # Le Monde (19 articles)
+  - "https://www.france24.com/en/rss"                               # France 24 (20 articles)
+  - "https://rss.dw.com/rdf/rss-en-all"                             # Deutsche Welle (20 articles)
+  - "https://www.spiegel.de/international/index.rss"                # Der Spiegel (20 articles)
+  - "https://www.rt.com/rss/news/"                                  # RT (20 articles)
+  - "https://www.smh.com.au/rss/world.xml"                          # Sydney Morning Herald (20 articles)
+  - "https://www.abc.net.au/news/feed/51120/rss.xml"                # ABC Australia (20 articles)
+  - "https://www.iranintl.com/en/feed"                              # Iran International (20 articles)
+  - "https://tass.com/rss/v2.xml"                                   # TASS (20 articles)
+  - "http://rss.cnn.com/rss/cnn_topstories.rss"                     # CNN Top Stories (20 articles)
+  - "http://feeds.nbcnews.com/nbcnews/public/world"                 # NBC News World (20 articles)
+  - "https://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"     # NY Times HomePage (20 articles)
+  - "https://feeds.foxnews.com/foxnews/world"                       # Fox News World (20 articles)
+  - "https://www.middleeasteye.net/rss"                             # Middle East Eye (20 articles)
+  - "https://mg.co.za/section/news/feed/"                           # Mail & Guardian South Africa (10 articles)
+  - "https://www.koreatimes.co.kr/www/rss/rss.xml"                  # The Korea Times (12 articles)
+  - "https://www.clarin.com/rss/lo-ultimo/"                         # Clarín Argentina (9 articles)
+  - "https://cnnespanol.cnn.com/feed/"                              # CNN en Español (20 articles)
+  - "https://foreignpolicy.com/feed/"                               # Foreign Policy (20 articles)
+  - "https://www.foreignaffairs.com/rss.xml"                        # Foreign Affairs (15 articles)
+  - "https://www.hrw.org/rss/news"                                  # Human Rights Watch (20 articles)
+  - "http://feeds.feedburner.com/dawn/news"                         # Dawn Pakistan (10 articles)
+  - "https://www.economist.com/the-world-this-week/rss.xml"         # The Economist (1 article)
+
+  # Technology
+  - "https://techcrunch.com/feed/"                                  # TechCrunch (20 articles)
+  - "https://www.theverge.com/rss/index.xml"                        # The Verge (10 articles)
+  - "https://gizmodo.com/rss"                                       # Gizmodo (19 articles)
+  - "https://www.wired.com/feed/rss"                                # Wired (20 articles)
+
+  # Business & Finance
+  - "https://www.ft.com/?format=rss"                                # Financial Times (12 articles)
+  - "https://www.ft.com/companies?format=rss"                       # Financial Times Companies (20 articles)
+
+  # Science & Health
+  - "https://www.sciencedaily.com/rss/all.xml"                      # ScienceDaily (20 articles)
+  - "https://www.npr.org/rss/rss.php?id=1039"                       # NPR Science (9 articles)
+
+  # Sports
+  - "https://www.espn.com/espn/rss/news"                            # ESPN News (20 articles)
+  - "https://feeds.bbci.co.uk/sport/rss.xml?edition=uk"            # BBC Sport (20 articles)
+  - "https://www.cbssports.com/rss/headlines/"                      # CBS Sports (20 articles)
+
+  # Culture & Books
+  - "https://www.nytimes.com/services/xml/rss/nyt/Books.xml"        # NYT Books (20 articles)
+  - "https://www.theatlantic.com/feed/channel/culture/"            # The Atlantic Culture (20 articles)
+
+  # Feeds that returned 0 articles (working but empty)
+  - "https://www.npr.org/rss/rss.php?id=1004"                       # NPR World alternate (0 articles)
+  - "https://arstechnica.com/rss-feeds/"                            # Ars Technica (0 articles)
+  - "https://www.dailysabah.com/rss"                                # Daily Sabah Turkey (0 articles)
+  - "https://www.haaretz.com/cmlink/1.822521"                       # Haaretz English (0 articles)
+  - "https://www.dw.com/en/top-stories/s-9097?maca=en-rss-en-all-1573-rdf"  # DW alternate (0 articles)
+  - "https://www.brookings.edu/feed/"                               # Brookings Institution (0 articles)
+  - "https://carnegieendowment.org/rss"                             # Carnegie Endowment (0 articles)
+  - "https://www.gulf-times.com/rss/World"                          # Gulf Times Qatar (0 articles)
+  - "https://www.nature.com/subjects/ecology.rss"                   # Nature Ecology (0 articles)
+  - "https://www.cdc.gov/rss/rss.xml"                               # CDC News (0 articles)
+  - "https://www.artnews.com/c/rss/news/"                          # ARTnews (0 articles)
