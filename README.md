@@ -1,6 +1,6 @@
-# 🚀 Rez05 - Next.js Blog Site with Automated Content Generation
+# 🚀 Auto-Blog: Automated AI-Powered Blogging Platform
 
-A modern, professional Next.js 14 blog boilerplate with an integrated automated content generation system. Combines static site generation capabilities with sophisticated AI-powered blog post creation through RSS feed analysis and Retrieval-Augmented Generation (RAG).
+A professional Next.js blogging platform with advanced AI-driven content generation. Auto-Blog leverages RSS feed analysis and Retrieval-Augmented Generation (RAG) to create high-quality, SEO-optimized blog content automatically. Built for content creators, marketers, and businesses who want to scale their blogging efforts with AI assistance.
 
 [![Next.js](https://img.shields.io/badge/Next.js-14.0+-000000?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-007ACC?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
@@ -143,7 +143,7 @@ image: "/images/posts/generated-post.jpg"
 ### Project Structure
 
 ```
-rez05/
+auto-blog/
 ├── automated_blog_generator.py    # 🏆 Primary content generator
 ├── agent/                        # AI agent system
 │   ├── agents/                  # Specialized agents
@@ -301,6 +301,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ for the automated content revolution.**
+**Auto-Blog: Scale Your Content, Multiply Your Impact.**
 
-[Generate Your First Post](https://github.com/kliewerdaniel/rez05#quick-start) | [View Live Demo](https://rez05.netlify.app/) | [Report Issues](https://github.com/kliewerdaniel/rez05/issues)
+Built with ❤️ for content creators who want to leverage AI for automated, professional blogging.
+
