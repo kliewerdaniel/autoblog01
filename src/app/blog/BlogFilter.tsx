@@ -61,6 +61,70 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
 
   return (
     <div>
+      {/* Filter Controls */}
+      <div className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
+        <div className="grid md:grid-cols-2 gap-4 mb-4">
+          {/* Search */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Search Posts
+            </label>
+            <input
+              type="text"
+              placeholder="Search by title, description, or tags..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full px-3 py-2 rounded-md bg-white text-gray-900 border border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            />
+          </div>
+
+          {/* Clear Filters */}
+          <div className="flex items-end">
+            <button
+              onClick={handleClearFilters}
+              className="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors"
+            >
+              Clear All Filters
+            </button>
+          </div>
+        </div>
+
+        {/* Category Filters */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Filter by Category
+          </label>
+          <div className="flex flex-wrap gap-2">
+            {allCategories.map(category => (
+              <button
+                key={category}
+                onClick={() => handleCategoryToggle(category)}
+                className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
+                  selectedCategories.includes(category)
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                {category}
+                {selectedCategories.includes(category) && (
+                  <span className="ml-1">×</span>
+                )}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Results Summary */}
+        <div className="mt-4 text-sm text-gray-600">
+          Showing {filteredPosts.length} of {posts.length} posts
+          {selectedCategories.length > 0 && (
+            <span className="ml-2">
+              (filtered by: {selectedCategories.join(', ')})
+            </span>
+          )}
+        </div>
+      </div>
+
       {/* Blog Posts Grid */}
       {filteredPosts.length === 0 ? (
         <div className="text-center py-12">
@@ -142,70 +206,6 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
           ))}
         </div>
       )}
-
-      {/* Filter Controls */}
-      <div className="mt-8 p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
-        <div className="grid md:grid-cols-2 gap-4 mb-4">
-          {/* Search */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Search Posts
-            </label>
-            <input
-              type="text"
-              placeholder="Search by title, description, or tags..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-3 py-2 rounded-md bg-white text-gray-900 border border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-            />
-          </div>
-
-          {/* Clear Filters */}
-          <div className="flex items-end">
-            <button
-              onClick={handleClearFilters}
-              className="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors"
-            >
-              Clear All Filters
-            </button>
-          </div>
-        </div>
-
-        {/* Category Filters */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Filter by Category
-          </label>
-          <div className="flex flex-wrap gap-2">
-            {allCategories.map(category => (
-              <button
-                key={category}
-                onClick={() => handleCategoryToggle(category)}
-                className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
-                  selectedCategories.includes(category)
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                {category}
-                {selectedCategories.includes(category) && (
-                  <span className="ml-1">×</span>
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Results Summary */}
-        <div className="mt-4 text-sm text-gray-600">
-          Showing {filteredPosts.length} of {posts.length} posts
-          {selectedCategories.length > 0 && (
-            <span className="ml-2">
-              (filtered by: {selectedCategories.join(', ')})
-            </span>
-          )}
-        </div>
-      </div>
     </div>
   );
 }
