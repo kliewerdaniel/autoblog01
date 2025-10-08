@@ -1,8 +1,8 @@
 # 🚀 Auto-Blog: Automated AI-Powered Blogging Platform
-!
+
 A professional Next.js blogging platform with advanced AI-driven content generation. Auto-Blog leverages RSS feed analysis and Retrieval-Augmented Generation (RAG) to create high-quality, SEO-optimized blog content automatically. Built for content creators, marketers, and businesses who want to scale their blogging efforts with AI assistance.
 
-[alt text](<Screenshot 2025-10-08 at 02.24.33.png>)
+![alt text](<Screenshot 2025-10-08 at 02.24.33.png>)
 
 [![Next.js](https://img.shields.io/badge/Next.js-14.0+-000000?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-007ACC?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
