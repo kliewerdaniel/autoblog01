@@ -25,7 +25,7 @@ class AgentConfig(BaseSettings):
     logs_dir: Path = Field(default_factory=lambda: Path(__file__).parent.parent / ".agent_data" / "logs")
 
     # Ollama settings
-    ollama_model: str = "qwen3-coder"
+    ollama_model: str = "mistral-small3.2"
     ollama_base_url: str = "http://localhost:11434"
     ollama_timeout: int = 300  # seconds
 

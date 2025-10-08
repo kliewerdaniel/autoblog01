@@ -111,12 +111,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <p className="text-gray-600 dark:text-gray-400 mb-8">
               The blog post you're looking for doesn't exist.
             </p>
-            <Link
-              href="/blog"
-              className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 font-medium"
-            >
-              ← Back to Blog
-            </Link>
+         
           </div>
         </div>
       </div>
